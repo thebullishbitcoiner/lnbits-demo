@@ -2,6 +2,8 @@
 #   Written by Pavel Kononov from LightningBounties.com
 #   For MIT Bitcoin Hackathon 2025
 #
+#   Happy hacking!
+#
 
 from service import LNbits
 
