@@ -127,7 +127,7 @@ class LNbits:
             raise Exception(
                 f"Couldn't fetch the wallet.\n"
                 f"Response status code: {response.status_code}\n"
-                f"Response body: {response.json()}"
+                f"Response body: {response.content}"
             )
         
         # Converting a json dict into a model
@@ -166,7 +166,7 @@ class LNbits:
             raise Exception(
                 f"Couldn't create an invoice.\n"
                 f"Response status code: {response.status_code}\n"
-                f"Response body: {response.json()}"
+                f"Response body: {response.content}"
             )
         
         # Converting a json dict into a model
@@ -203,7 +203,7 @@ class LNbits:
             raise Exception(
                 f"Couldn't create an invoice.\n"
                 f"Response status code: {response.status_code}\n"
-                f"Response body: {response.json()}"
+                f"Response body: {response.content}"
             )
         
         # Converting a json dict into a model
