@@ -48,7 +48,45 @@ class WalletInfo:
 
 @dataclass
 class Invoice:
-    payment_hash: str
-    payment_request: str
     checking_id: str
-    lnurl_response: Any | None = None
+    payment_hash: str
+    wallet_id: str
+    amount: int
+    fee: int
+    bolt11: str
+    status: str
+    memo: str
+    expiry: datetime
+    webhook: str
+    webhook_status: int
+    preimage: str
+    tag: str
+    extension: str
+    time: datetime
+    created_at: datetime
+    updated_at: datetime
+    extra: dict
+    # payment_request: str
+    # lnurl_response: Any | None = None
+
+# Schema from feb18 lnbits
+# {
+#   "checking_id": "string",
+#   "payment_hash": "string",
+#   "wallet_id": "string",
+#   "amount": 0,
+#   "fee": 0,
+#   "bolt11": "string",
+#   "status": "pending",
+#   "memo": "string",
+#   "expiry": "2025-04-04T19:49:27.858Z",
+#   "webhook": "string",
+#   "webhook_status": 0,
+#   "preimage": "string",
+#   "tag": "string",
+#   "extension": "string",
+#   "time": "2025-04-04T19:49:27.858Z",
+#   "created_at": "2025-04-04T19:49:27.858Z",
+#   "updated_at": "2025-04-04T19:49:27.858Z",
+#   "extra": {}
+# }
