@@ -54,7 +54,7 @@ class LNbits:
             raise Exception(
                 f"Couldn't create an account.\n"
                 f"Response status code: {response.status_code}\n"
-                f"Response body: {response.json()}"
+                f"Response body: {response.content}"
             )
 
         # Converting a json dict into a model
